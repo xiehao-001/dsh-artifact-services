@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "成果服务",
+    "description": "Studio 与其它插件共用的成果生成底座：Office、语音与视频渲染服务。",
+    "detail": "提供文档/演示/表格生成与预览、TTS/ASR Provider 抽象、Remotion 视频渲染管线。单独安装可用于自建成果插件；Studio 会自动依赖它。"
+  }
+}

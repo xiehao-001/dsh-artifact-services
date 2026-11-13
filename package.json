@@ -1,0 +1,80 @@
+{
+  "name": "@eduwork/dsh-artifact-services",
+  "version": "0.3.4",
+  "description": "Shared artifact backend for Office generation, speech and video rendering.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "license": "MulanPSL-2.0 AND MIT",
+  "exports": {
+    ".": "./lib/index.js",
+    "./office": "./lib/office.js",
+    "./official-office": "./lib/official-office.js",
+    "./office-tools": "./lib/office-tools.js",
+    "./tool-execution": "./lib/tool-execution.js",
+    "./speech": "./lib/speech.js",
+    "./images": "./lib/images.js",
+    "./image-tools": "./lib/image-tools.js",
+    "./media": "./lib/media.js",
+    "./timeline": "./lib/timeline.js",
+    "./providers": "./lib/providers.js",
+    "./video-runner": "./lib/video-runner.js",
+    "./dsh": "./lib/dsh.js",
+    "./office-preview": "./lib/office-preview.js",
+    "./office-preview-client": "./lib/office-preview-client.js",
+    "./office-design": "./lib/office-design.js",
+    "./creation-guidance": "./lib/creation-guidance.js",
+    "./presentation-contract": "./lib/presentation-contract.js",
+    "./music": "./lib/music.js",
+    "./runtime": "./lib/runtime.js",
+    "./remotion": "./lib/remotion.js",
+    "./transcription": "./lib/transcription.js",
+    "./transcription-openai": "./lib/transcription-openai.js",
+    "./transcription-whisper": "./lib/transcription-whisper.js",
+    "./transcription-dsh": "./lib/transcription-dsh.js",
+    "./transcription-components": "./lib/transcription-components.js",
+    "./locale/en.json": "./locale/en.json",
+    "./locale/zh.json": "./locale/zh.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/**/*",
+    "locale/*.json",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md",
+    "MARKET.md",
+    "docs/**/*"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": ">=24.18.0",
+    "dsh": ">=0.2.1 <0.3.0"
+  },
+  "keywords": [
+    "artifacts",
+    "office",
+    "tts",
+    "asr",
+    "remotion"
+  ],
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=4.0.5 <4.1.0 || 4.1.0",
+    "@deepseek-ai/dsh-skill": ">=0.2.1-rc.2 <0.3.0-0 || >=0.2.2-rc.1 <0.2.3-0",
+    "@deepseek-ai/dsh-tools": ">=0.2.1-rc.2 <0.3.0-0 || >=0.2.2-rc.1 <0.2.3-0"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.520",
+    "@remotion/renderer": "4.0.520",
+    "@remotion/media": "4.0.520",
+    "@remotion/captions": "4.0.520",
+    "mediabunny": "1.55.5",
+    "remotion": "4.0.520",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  }
+}

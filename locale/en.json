@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Artifact Services",
+    "description": "Shared artifact backend for Office generation, speech and video rendering."
+  }
+}
