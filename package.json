@@ -44,7 +44,8 @@
     "cordis.patch.yml",
     "README.md",
     "MARKET.md",
-    "docs/**/*"
+    "docs/**/*",
+    "skills/**/*"
   ],
   "dsh": {
     "bundle": {
